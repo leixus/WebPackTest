@@ -1,4 +1,11 @@
-// import _ from "lodash"; 
+import _ from "lodash"; 
+
+import './style.css';
+
+import Icon from "./icon.jpg";
+
+import Data from './data.xml';
+
 // import { hello } from "./hello";
 
 // function component() {
@@ -19,13 +26,25 @@ function component() {
 
     console.log("npm 配置package.json快速打包");
 
-    hello.hello;
+    // hello.hello;
 
     var element = document.createElement('div');
 
     // element.innerHTML = _.join(['Hello', 'webpack'], '');
 
-    element.innerHTML = "Hello webpack ";
+    element.innerHTML = _.join(['Hello', ' webpack'], '');
+
+    element.classList.add("hello");
+
+    // 将图像添加到我们现有的div。
+
+    var myIcon = new Image();
+
+    myIcon.src = Icon;
+
+    element.appendChild(myIcon);
+
+    console.log(Data);
 
     return element;
 }
