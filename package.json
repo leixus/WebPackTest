@@ -1,0 +1,24 @@
+{
+  "name": "webpacktest",
+  "version": "1.0.0",
+  "description": "使用webpack打包项目，所有的都打包，没办法啊，es6用到了，我也很无奈啊",
+  "privatecls": true,
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leixus/WebPackTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leixus/WebPackTest/issues"
+  },
+  "homepage": "https://github.com/leixus/WebPackTest#readme",
+  "devDependencies": {
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
