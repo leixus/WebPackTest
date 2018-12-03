@@ -1,50 +1,20 @@
 import _ from "lodash"; 
 
-import './style.css';
-
-import Icon from "./icon.jpg";
-
-import Data from './data.xml';
-
-// import { hello } from "./hello";
-
-// function component() {
-//     var element = document.createElement('div');
-
-    // Lodash（目前通过一个 script 脚本引入）对于执行这一行是必需的
-    // lodash, now imported by this script
-//     element.innerHTML = _.join(['Hello', 'webpack'], '');
-
-//     return element;
-// }
+import printMe from "./print.js";
 
 function component() {
 
-    console.log("打包成功！");
-
-    console.log("使用配置文件打包");
-
-    console.log("npm 配置package.json快速打包");
-
-    // hello.hello;
-
     var element = document.createElement('div');
 
-    // element.innerHTML = _.join(['Hello', 'webpack'], '');
+    var btn = document.createElement("button");
 
     element.innerHTML = _.join(['Hello', ' webpack'], '');
 
-    element.classList.add("hello");
+    btn.innerHTML = "点击按钮执行方法console!";
 
-    // 将图像添加到我们现有的div。
+    btn.onclick = printMe;
 
-    var myIcon = new Image();
-
-    myIcon.src = Icon;
-
-    element.appendChild(myIcon);
-
-    console.log(Data);
+    element.appendChild(btn);
 
     return element;
 }
