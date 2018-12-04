@@ -5,12 +5,8 @@
   "privatecls": true,
   "sideEffects": false,
   "scripts": {
-    "start": "webpack-dev-server --hotOnly",
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "server": "node server.js",
-    "dev-server": "node dev-server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +30,7 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-middleware": "^3.4.0",
     "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4",
     "xml-loader": "^1.2.1"
   }
 }

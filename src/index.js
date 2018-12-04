@@ -7,7 +7,7 @@ function component() {
 
     element.innerHTML = [
         'Hello webpack!',
-        '5 cubed is equal to ' + cube(5)
+        '5 cubed is equal to ' + cube(8)
     ].join('\n\n');
 
     return element;
